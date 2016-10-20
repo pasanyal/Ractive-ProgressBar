@@ -1,0 +1,51 @@
+/* Contains basic styles used in the applcation */
+body{
+    background-color: $skin;
+}
+
+#app{
+    margin-top: $margin1;
+}
+
+.container{
+    margin: auto;
+    width: $container-width;
+    text-align: $center-text-align;
+    background-color: $dark-skin;
+    padding: $padding1;
+    
+    .row-1{
+        margin-top: $margin2;        
+    }
+}
+
+.progress-bar {
+    height: $full-height;
+    position: $relative-position;
+    top: $top-position;
+}
+
+.row-pb{
+    height: $row-height;
+    border: $row-border-width $row-border-style $black;
+    margin: $row-margin;
+    
+    .progress-barB{
+        @extend .progress-bar;
+        background-color: $blue;
+    }
+
+    .progress-barR{
+        @extend .progress-bar;
+        background-color: $red;
+    }
+
+    .display-label{
+        position: $relative-position;
+        z-index: $row-index;
+    }
+}
+
+.row-select, .btns{
+    margin: $row-margin;
+}
