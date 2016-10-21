@@ -94,7 +94,14 @@
                 this.ractive.changeInterval(-25); 
                 this.ractive.changeInterval(-10); 
                 this.assert.equal( this.ractive.get(keyPath1), 215);
-            }); 
+            });
+			
+			it( 'Negative Test - ProgressBar ' + val + ': Initial Display Width: 0, Width interval change function has been called with "null" parameter, so width is not changed, No Color', function () {  
+                this.ractive.set("selectedProgressBar", null);
+                this.ractive.changeInterval(null); 
+                this.ractive.changeInterval(null); 
+                this.assert.equal( this.ractive.get(keyPath1), 0);
+            });
         });
 	});
 
