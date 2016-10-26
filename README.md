@@ -25,4 +25,4 @@ The unit test cases contains two types of positive and one type of negative test
 
 ## JSFiddle links:
 * Demo Application: https://jsfiddle.net/psanyal/bery9Ljw/1/
-* Unit Test Cases Runner: https://jsfiddle.net/psanyal/mdepbfyo/4/
+* Unit Test Cases Runner: https://jsfiddle.net/psanyal/mdepbfyo/6/
